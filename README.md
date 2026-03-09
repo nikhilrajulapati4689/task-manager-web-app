@@ -178,6 +178,8 @@ https://github.com/nikhilrajulapati4689
 
 If you like this project, consider giving it a **star ⭐ on GitHub**.
 
-Developed by **Nikhil Rajulapati**
+---
+# Developed by
+**Nikhil Rajulapati**
 AI & Machine Learning Student  
 Vignan's Foundation for Science, Technology and Research
