@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #eef6fb;
+}
+
+.app {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    background: #0f172a;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 8px;
+    color: #cbd5e1;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.sidebar a.active,
+.sidebar a:hover {
+    background: #1e293b;
+}
+
+/* Main */
+main {
+    padding: 30px;
+    overflow-y: auto;
+}
+
+/* Stats */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.stat-card {
+    background: white;
+    padding: 18px;
+    border-radius: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    border: 2px solid transparent;
+    transition: 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.stat-card.active {
+    border-color: #2563eb;
+    background: #e0ecff;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+/* Form */
+.task-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.task-form input,
+.task-form select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+}
+
+/* FIXED ADD BUTTON */
+.task-form .add-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 22px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.task-form .add-btn:hover {
+    background-color: #43a047;
+    transform: scale(1.05);
+}
+
+.task-form .add-btn:active {
+    transform: scale(0.95);
+}
+
+/* Tasks */
+.task {
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    background: #f8fafc;
+}
+
+.task.pending   { border-left: 6px solid orange; }
+.task.ongoing   { border-left: 6px solid #2563eb; }
+.task.completed { border-left: 6px solid green; }
+
+.actions a {
+    margin-right: 10px;
+    font-size: 13px;
+    text-decoration: none;
+    color: #2563eb;
+}
+
+.deadline {
+    color: red;
+    font-weight: bold;
+}
+
+/* Countdown styles */
+.task {
+    display: grid;
+    grid-template-columns: 1fr 140px auto;
+    gap: 15px;
+    align-items: center;
+}
+
+.countdown {
+    font-weight: bold;
+    text-align: right;
+    font-size: 14px;
+}
+
+.countdown.normal {
+    color: #2563eb;
+}
+
+.countdown.urgent {
+    color: #f59e0b;
+}
+
+.countdown.overdue {
+    color: #ef4444;
+}
+
+.countdown.completed {
+    color: green;
+}
+
+/* Blink animation */
+@keyframes blink {
+    50% { opacity: 0.3; }
+}
+
+.blink {
+    animation: blink 1s infinite;
+}
