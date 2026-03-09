@@ -47,7 +47,7 @@ It is designed to demonstrate **basic web development concepts such as authentic
 ## 📂 Project Structure
 
 ```
-task-manager
+task-manager-web-app
 │
 ├── assets
 │   ├── css
@@ -70,6 +70,13 @@ task-manager
 │   ├── tasks.php
 │   └── my-tasks.php
 │
+├── screenshots
+│   ├── dashboard.png
+│   ├── login.png
+│   └── tasks.png
+│
+├── .gitignore
+├── LICENSE
 ├── README.md
 └── index.php
 ```
