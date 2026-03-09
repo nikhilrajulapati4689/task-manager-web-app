@@ -181,6 +181,5 @@ If you like this project, consider giving it a **star ⭐ on GitHub**.
 # Developed by
 **Nikhil Rajulapati** 
 
-AI & Machine Learning Student  
-
+Artificial Intelligence & Machine Learning Student  
 Vignan's Foundation for Science, Technology and Research
