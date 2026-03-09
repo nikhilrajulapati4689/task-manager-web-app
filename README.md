@@ -5,7 +5,6 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 
-# Task Manager Web Application
 
 A simple **Task Manager Web Application** built using **PHP, MySQL, HTML, CSS, and JavaScript**.
 This project allows users to **register, log in, manage tasks, and track their assigned work** through a clean dashboard interface.
